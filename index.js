@@ -31,7 +31,7 @@ form.addEventListener("submit", function (e) {
     }
     else {
         let tempText = text.slice(0, value);
-        tempText = tempText.map(function (paragraph) {
+        tempText = tempText.map((paragraph)=>{
             return `<p class="result">${paragraph}</p>`;
         }).join("");
         result.innerHTML = tempText;
